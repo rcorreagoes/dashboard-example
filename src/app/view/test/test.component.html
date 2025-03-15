@@ -1,0 +1,113 @@
+<div class="dashboard-container mat-typography">
+  <mat-toolbar color="primary" class="toolbar">
+    <span>Angular Material Admin Full</span>
+    <span class="spacer"></span>
+    <button mat-icon-button>
+      <mat-icon>notifications</mat-icon>
+    </button>
+    <button mat-button>
+      <mat-icon>account_circle</mat-icon>
+      Hi, Robbert Cotton
+    </button>
+  </mat-toolbar>
+
+  <div class="dashboard-content">
+    <mat-sidenav-container class="sidenav-container">
+      <mat-sidenav mode="side" opened>
+        <mat-nav-list>
+          <mat-list-item>
+            <mat-icon mat-list-icon>dashboard</mat-icon>
+            <span mat-line>Dashboard</span>
+          </mat-list-item>
+          <mat-list-item>
+            <mat-icon mat-list-icon>person</mat-icon>
+            <span mat-line>Profile</span>
+          </mat-list-item>
+          <mat-list-item>
+            <mat-icon mat-list-icon>shopping_cart</mat-icon>
+            <span mat-line>E-commerce</span>
+            <span mat-badge="New" matSuffix></span>
+          </mat-list-item>
+        </mat-nav-list>
+      </mat-sidenav>
+
+      <mat-sidenav-content>
+        <div class="content">
+          <!-- Profile Section -->
+          <div class="profile-section">
+            <mat-card class="profile-card">
+              <mat-card-header>
+                <img
+                  mat-card-avatar
+                  src="https://via.placeholder.com/150"
+                  alt="User photo"
+                />
+                <mat-card-title>Julee Cruise</mat-card-title>
+                <mat-card-subtitle>Product Designer</mat-card-subtitle>
+              </mat-card-header>
+              <mat-card-content>
+                <div class="badges">
+                  <span mat-chip color="primary">UX</span>
+                  <span mat-chip color="accent">Art</span>
+                  <span mat-chip color="warn">Design</span>
+                </div>
+              </mat-card-content>
+            </mat-card>
+          </div>
+
+          <!-- Files Section -->
+          <mat-card class="files-card">
+            <mat-tab-group>
+              <mat-tab label="Work">
+                <div class="file-grid">
+                  <mat-card *ngFor="let file of workFiles" class="file-card">
+                    <mat-card-title>{{ file.name }}</mat-card-title>
+                    <mat-card-subtitle
+                      >{{ file.count }} files</mat-card-subtitle
+                    >
+                  </mat-card>
+                </div>
+              </mat-tab>
+              <mat-tab label="Private"></mat-tab>
+              <mat-tab label="Social"></mat-tab>
+            </mat-tab-group>
+          </mat-card>
+
+          <!-- Other Sections -->
+          <div class="cards-grid">
+            <mat-card>
+              <mat-card-header>
+                <mat-card-title>Media</mat-card-title>
+              </mat-card-header>
+              <mat-card-content>
+                <p>194 Posts</p>
+                <p>12.8k Followers</p>
+              </mat-card-content>
+            </mat-card>
+
+            <mat-card>
+              <mat-card-header>
+                <mat-card-title>Projects</mat-card-title>
+              </mat-card-header>
+              <mat-card-content>
+                <p>121 Ongoing Projects</p>
+              </mat-card-content>
+            </mat-card>
+
+            <mat-card>
+              <mat-card-header>
+                <mat-card-title>Tasks</mat-card-title>
+              </mat-card-header>
+              <mat-card-content>
+                <ul>
+                  <li>Call with client</li>
+                  <li>Design review</li>
+                </ul>
+              </mat-card-content>
+            </mat-card>
+          </div>
+        </div>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>
+</div>

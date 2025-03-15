@@ -1,0 +1,170 @@
+<section class="button">
+  <div class="example-label">Basic</div>
+  <div class="example-button-row">
+    <dashboard-a-button [label]="'Basic'"></dashboard-a-button>
+    <dashboard-a-button
+      [label]="'Disabled'"
+      [disabled]="true"
+    ></dashboard-a-button>
+    <dashboard-a-button
+      [label]="'Link'"
+      [link]="'https://www.google.com/'"
+    ></dashboard-a-button>
+  </div>
+</section>
+<mat-divider></mat-divider>
+<section class="button">
+  <div class="example-label">Raised</div>
+  <div class="example-button-row">
+    <dashboard-a-button
+      [buttonTypeStyle]="ButtonTypeStyle.MatRaisedButton"
+      [label]="'Basic'"
+    ></dashboard-a-button>
+    <dashboard-a-button
+      [buttonTypeStyle]="ButtonTypeStyle.MatRaisedButton"
+      [label]="'Disabled'"
+      [disabled]="true"
+    ></dashboard-a-button>
+    <dashboard-a-button
+      [buttonTypeStyle]="ButtonTypeStyle.MatRaisedButton"
+      [label]="'Link'"
+      [link]="'https://www.google.com/'"
+    ></dashboard-a-button>
+  </div>
+</section>
+<mat-divider></mat-divider>
+<section class="button">
+  <div class="example-label">Stroked</div>
+  <div class="example-button-row">
+    <dashboard-a-button
+      [buttonTypeStyle]="ButtonTypeStyle.MatStrokedButton"
+      [label]="'Basic'"
+    ></dashboard-a-button>
+    <dashboard-a-button
+      [buttonTypeStyle]="ButtonTypeStyle.MatStrokedButton"
+      [label]="'Disabled'"
+      [disabled]="true"
+    ></dashboard-a-button>
+    <dashboard-a-button
+      [buttonTypeStyle]="ButtonTypeStyle.MatStrokedButton"
+      [label]="'Link'"
+      [link]="'https://www.google.com/'"
+    ></dashboard-a-button>
+  </div>
+</section>
+<mat-divider></mat-divider>
+<section class="button">
+  <div class="example-label">Flat</div>
+  <div class="example-button-row">
+    <dashboard-a-button
+      [buttonTypeStyle]="ButtonTypeStyle.MatFlatButton"
+      [label]="'Basic'"
+    ></dashboard-a-button>
+    <dashboard-a-button
+      [buttonTypeStyle]="ButtonTypeStyle.MatFlatButton"
+      [label]="'Disabled'"
+      [disabled]="true"
+    ></dashboard-a-button>
+    <dashboard-a-button
+      [buttonTypeStyle]="ButtonTypeStyle.MatFlatButton"
+      [label]="'Link'"
+      [link]="'https://www.google.com/'"
+    ></dashboard-a-button>
+  </div>
+</section>
+<mat-divider></mat-divider>
+<section class="button">
+  <div class="example-label">Icon</div>
+  <div class="example-button-row">
+    <div class="example-flex-container">
+      <dashboard-a-button
+        [buttonTypeStyle]="ButtonTypeStyle.MatIconButton"
+        [icon]="'more_vert'"
+      >
+      </dashboard-a-button>
+      <dashboard-a-button
+        [buttonTypeStyle]="ButtonTypeStyle.MatIconButton"
+        [icon]="'open_in_new'"
+        [disabled]="true"
+      >
+      </dashboard-a-button>
+    </div>
+  </div>
+</section>
+<mat-divider></mat-divider>
+<section class="button">
+  <div class="example-label">FAB</div>
+  <div class="example-button-row">
+    <div class="example-flex-container">
+      <div class="example-button-container">
+        <dashboard-a-button
+          [buttonTypeStyle]="ButtonTypeStyle.MatFab"
+          [icon]="'delete'"
+        >
+        </dashboard-a-button>
+      </div>
+      <div class="example-button-container">
+        <dashboard-a-button
+          [buttonTypeStyle]="ButtonTypeStyle.MatFab"
+          [icon]="'favorite'"
+          [disabled]="true"
+        >
+        </dashboard-a-button>
+      </div>
+    </div>
+  </div>
+</section>
+<mat-divider></mat-divider>
+<section class="button">
+  <div class="example-label">Mini FAB</div>
+  <div class="example-button-row">
+    <div class="example-flex-container">
+      <div class="example-button-container">
+        <dashboard-a-button
+          [buttonTypeStyle]="ButtonTypeStyle.MatMiniFab"
+          [icon]="'menu'"
+        >
+        </dashboard-a-button>
+      </div>
+      <div class="example-button-container">
+        <dashboard-a-button
+          [buttonTypeStyle]="ButtonTypeStyle.MatMiniFab"
+          [icon]="'home'"
+          [disabled]="true"
+        >
+        </dashboard-a-button>
+      </div>
+    </div>
+  </div>
+</section>
+<mat-divider></mat-divider>
+<section class="button">
+  <div class="example-label">Extended Fab</div>
+  <div class="example-button-row">
+    <div class="example-flex-container">
+      <div class="example-button-container">
+        <dashboard-a-button
+          [buttonTypeStyle]="ButtonTypeStyle.MatFabExtended"
+          [icon]="'favorite'"
+          [label]="'Basic'"
+        ></dashboard-a-button>
+      </div>
+      <div class="example-button-container">
+        <dashboard-a-button
+          [buttonTypeStyle]="ButtonTypeStyle.MatFabExtended"
+          [icon]="'favorite'"
+          [label]="'Disabled'"
+          [disabled]="true"
+        ></dashboard-a-button>
+      </div>
+      <div class="example-button-container">
+        <dashboard-a-button
+          [buttonTypeStyle]="ButtonTypeStyle.MatFabExtended"
+          [label]="'Link'"
+          [icon]="'favorite'"
+          [link]="'https://www.google.com/'"
+        ></dashboard-a-button>
+      </div>
+    </div>
+  </div>
+</section>

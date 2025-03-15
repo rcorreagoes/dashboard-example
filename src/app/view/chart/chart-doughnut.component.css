@@ -1,0 +1,24 @@
+.chart-container {
+  text-align: center;
+  margin-top: 20px;
+
+  canvas {
+    display: inline-block;
+  }
+
+  .legend {
+    margin-top: 10px;
+
+    span {
+      display: inline-block;
+      margin: 0 10px;
+
+      .color-box {
+        width: 12px;
+        height: 12px;
+        display: inline-block;
+        margin-right: 5px;
+      }
+    }
+  }
+}

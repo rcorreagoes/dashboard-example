@@ -1,0 +1,21 @@
+twenty-wide {
+  width: 20%;
+}
+@mixin flexbox($justify: center, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+.container {
+  @include flexbox(space-between, flex-start);
+}
+
+.flex1 {
+  flex: 1;
+  margin-right: 16px;
+}
+
+.flex2 {
+  flex: 2
+}

@@ -1,0 +1,34 @@
+.dashboard-container {
+  height: 100vh;
+
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sidenav-container {
+    height: calc(100vh - 64px);
+  }
+
+  .dashboard-content {
+    display: flex;
+
+    .profile-card {
+      max-width: 400px;
+      margin: 16px auto;
+    }
+
+    .file-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 16px;
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 16px;
+      margin: 16px;
+    }
+  }
+}

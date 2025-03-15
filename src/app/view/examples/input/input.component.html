@@ -1,0 +1,108 @@
+<div class="container">
+  <div class="flex1">
+    <dashboard-m-input
+      label="Favorite food"
+      value="Sushi"
+      placeholder="Ex. Pizza"
+      [buttonClear]="true"
+    >
+    </dashboard-m-input>
+  </div>
+
+  <div class="flex2">
+    {{ examples[0] }}
+  </div>
+</div>
+
+<div class="container">
+  <div class="flex1">
+    <dashboard-m-input
+      label="Disabled"
+      [disabledValue]="true"
+      placeholder="Will not be displayed"
+      class="twenty-wide"
+    >
+    </dashboard-m-input>
+  </div>
+  <div class="flex2">
+    {{ examples[1] }}
+  </div>
+</div>
+
+<div class="container">
+  <div class="flex1">
+    <dashboard-m-input
+      label="Hint"
+      placeholder="Ex. Anything"
+      startHint="Start"
+      endHint="End"
+    >
+    </dashboard-m-input>
+  </div>
+  <div class="flex2">
+    {{ examples[2] }}
+  </div>
+</div>
+
+<div class="container">
+  <div class="flex1">
+    <dashboard-m-input
+      label="Hint count"
+      placeholder="Ex. Anything"
+      [countHint]="10"
+    >
+    </dashboard-m-input>
+  </div>
+  <div class="flex2">
+    {{ examples[3] }}
+  </div>
+</div>
+
+<div class="container">
+  <div class="flex1">
+    <dashboard-m-input
+      label="Telephone"
+      placeholder="95555-1234"
+      [iconPrefix]="'phone'"
+    >
+    </dashboard-m-input>
+  </div>
+  <div class="flex2">
+    {{ examples[4] }}
+  </div>
+</div>
+
+<div class="container">
+  <div class="flex1">
+    <dashboard-m-input
+      type="password"
+      label="Password"
+      placeholder=""
+      [(ngModel)]="test"
+    >
+    </dashboard-m-input>
+  </div>
+  <div class="flex2">
+    {{ examples[5] }}
+  </div>
+</div>
+
+<div class="container">
+  <div class="flex1">
+    <form [formGroup]="form" class="input-form">
+      <dashboard-m-input
+        *ngIf="form.get('email')"
+        formControlName="email"
+        [validators]="emailValidator"
+        type="email"
+        label="Email"
+        placeholder="Ex. name@mail.com"
+      >
+      </dashboard-m-input>
+    </form>
+  </div>
+  <div class="flex2">
+    {{ examples[6] }}
+  </div>
+</div>
+{{ test }}
